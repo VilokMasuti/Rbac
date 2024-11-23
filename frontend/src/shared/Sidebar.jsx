@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react'
+
 import { useSelector } from 'react-redux'
 import { NavLink, useLocation } from 'react-router-dom'
-import { Users, Shield, Key, LayoutDashboard, Menu, X } from 'lucide-react'
+import { Users, Shield, Key, LayoutDashboard, Menu, } from 'lucide-react'
 import { cn } from "../lib/utils"
 import { Button } from "../components/ui/button"
 import {

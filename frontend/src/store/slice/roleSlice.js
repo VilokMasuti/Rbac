@@ -19,7 +19,7 @@ export const createRole = createAsyncThunk(
   'roles/createRole',
   async (roleData, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`http://localhost:5000/roles`, roleData);
+      const response = await axios.post(`${API_URL}/roles/roles`, roleData);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);

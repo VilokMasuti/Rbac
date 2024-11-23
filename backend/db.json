@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "username": "vilok",
+      "email": "vilokmasuti@outlook.com",
+      "password": "12345678",
+      "roleId": "1",
+      "isActive": true,
+      "id": "faff"
+    },
+    {
+      "id": "74c4",
+      "username": "radha",
+      "email": "radh@gmail.cpm",
+      "password": "12345",
+      "roleId": "2",
+      "isActive": true
+    },
+    {
+      "id": "e6a2",
+      "username": "krishananas",
+      "email": "krshn@gmail.com",
+      "password": "123456789",
+      "roleId": 2,
+      "createdAt": "2024-11-23T05:04:18.521Z",
+      "lastLogin": null
+    }
+  ],
+  "roles": [
+    {
+      "name": "admin",
+      "description": "Administrator with full access",
+      "permissions": [
+        null,
+        null,
+        null,
+        null,
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "user",
+      "description": "Regular user with limited access"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "2",
+      "name": "write_users",
+      "description": "Can create and edit user information"
+    },
+    {
+      "id": "3",
+      "name": "delete_users",
+      "description": "Can delete users"
+    },
+    {
+      "id": "4",
+      "name": "manage_roles",
+      "description": "Can manage roles and permissions"
+    }
+  ],
+  "role_permissions": [
+    {
+      "id": "1",
+      "roleId": 1,
+      "permissionId": 1
+    },
+    {
+      "id": "2",
+      "roleId": 1,
+      "permissionId": 2
+    },
+    {
+      "id": "3",
+      "roleId": 1,
+      "permissionId": 3
+    },
+    {
+      "id": "4",
+      "roleId": 1,
+      "permissionId": 4
+    },
+    {
+      "id": "5",
+      "roleId": 2,
+      "permissionId": 1
+    }
+  ]
+}

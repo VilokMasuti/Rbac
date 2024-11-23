@@ -1,9 +1,0 @@
-- type: web
-    name: rbac-dashboard-backend
-    env: node
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && npm start
-    envVars:
-      - key: NODE_ENV
-        value: production
-
